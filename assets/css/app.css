@@ -1,0 +1,126 @@
+/*RESETS*/
+:root{
+    --primary-color:#2C497F
+}
+
+*{
+    font-family: 'Rubik', sans-serif;
+}
+body, h1 {
+    margin:0; 
+    padding:0;
+}
+a, li {
+    list-style: none;
+    text-decoration: none;
+}
+/*END RESETS*/
+
+/*  HEADER  */
+
+header{
+    display:flex;
+    padding:1% 5%;
+    position: sticky;
+    top:0;
+    z-index: 4;
+    background-color: #ffff;
+}
+
+#menu-left{
+    width: 50%;
+}
+#menu-right{
+    width: 50%;
+    text-align: center;
+}
+#menu-right ul,li{
+    display:inline-block;
+}
+#menu-right ul{
+    margin-top: 8px 
+}
+#menu-right li{
+    padding:0 20px; 
+}
+
+/* END HEADER */
+
+/* MAIN */
+
+main .container-banner{
+    background-image: url('../img/banner_wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 90vh;
+    display:flex; 
+    flex-direction: column;
+}
+
+.container-banner .content-banner{
+    margin-top: auto;
+    margin-bottom:auto;
+    padding: 0 5rem;
+}
+
+.content-banner h1{
+    font-size: 3.2rem;
+    color: #fff;
+    margin-bottom:10px;
+}
+
+.banner-action{
+    display:inline-block;
+    background-color: #fff;
+    color:var(--primary-color);
+    padding:0.5% 2%;
+    border-radius: 4px;
+}
+/* END MAIN */
+
+/* CONTAINER - SECTIONS */
+.container{
+    max-width: 1250px;
+    margin:2% auto;
+}
+
+.container-content{
+    margin-bottom: 5%;
+    padding-left:5rem;
+    padding-right: 5rem;
+}
+
+.container-content h1{
+    font-size: 46px;
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom:2%;
+}
+
+.section-text{
+    line-height: 1.5;
+    font-size: 1.3rem;
+}
+
+/* END CONTAINER - SECTIONS */
+
+/* PORTIFOLIOS */
+.box-grid{
+    display: grid;
+    justify-content: center;
+    margin:5% 0;
+    grid-template-columns:repeat(auto-fit, 300px);
+}
+
+.item-portifolio{
+    text-align: center;
+    border: 2px solid var(--primary-color);
+    margin:2% 20px;
+    border-radius:4px;
+}
+
+.item-portifolio:hover{
+    border: 2px solid black;
+}
+
+/*  */
